@@ -130,6 +130,7 @@ void app_main()
   }
 
   puts("");
+  xSemaphoreGive( mutex );
 
   vTaskDelay(3000/portTICK_PERIOD_MS);
 
