@@ -107,7 +107,7 @@ void app_main()
 
   printf( "\nflash size             : %dMB (%s)\n", spi_flash_get_chip_size() / (1024 * 1024),
               (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
-
+              
   printf( "free heap size         : %d\n", esp_get_free_heap_size() );
 
   printf( "Running core           : %d\n", xPortGetCoreID() );
